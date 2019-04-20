@@ -1,20 +1,22 @@
-##Создать окружение и установить зависимости
+## Создать окружение и установить зависимости
 ```
 virtualenv .venv
 pip install -r req.txt
 ```
 
-##База данных PostgreSQL:
+## База данных PostgreSQL:
 ```sql
 create user cleverbots with password 'cleverbots';
 create database cleverbots with owner cleverbots;
 ```
-##Выполнить миграции:
+## Выполнить миграции:
 `./manage.py migrate`
-##Создать суперюзера: 
+
+
+## Создать суперюзера: 
 `./manage.py createsuperuser`
 
-###Примечания:
+### Примечания:
 
 Желательно сначала добавить картинки через админку.
 
